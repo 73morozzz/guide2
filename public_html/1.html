@@ -1,4 +1,5 @@
-﻿<!DOCTYPE html>
+﻿
+<!DOCTYPE html>
 <html lang="ru">
 
 	<head>
@@ -34,8 +35,10 @@
 
 	</head>
 	<body>
-    <?php include 'application/views/'.$content_view; ?>
-
+    <div>
+<p>
+Вы ввели не всю информацию, вернитесь назад и заполните все поля!</p>
+</div>
 		<div class="section small text-center dark transparent parallax" style="background-image: url('images/background02.jpg');">
 			<div class="inner">
 				<div class="container">
@@ -58,9 +61,9 @@
 					</div> <!-- end .col-sm-3 -->
 					<div class="col-sm-3">
 						<h6>Популярные города</h6>
-						<p><a href="/cities">Москва</a></p>
-						<p><a href="/cities">Инза</a></p>
-						<p><a href="/cities">Омск</a></p>
+						<p><a href="/city">Москва</a></p>
+						<p><a href="/city">Инза</a></p>
+						<p><a href="/city">Омск</a></p>
 					</div> <!-- end .col-sm-3 -->
 					<div class="col-sm-3">
 						<h6>Переходи быстро</h6>
@@ -68,7 +71,7 @@
 							<div class="col-xs-6">
 								<p><a href="/main">Главная</a></p>
 								<p><a href="/about">О нас</a></p>
-								<p><a href="/cities">Города</a></p>
+								<p><a href="/city">Города</a></p>
 							</div> <!-- end .col-xs-6 -->
 							<!--<div class="col-xs-6">
 								<p><b>07 - 23</b></p>
