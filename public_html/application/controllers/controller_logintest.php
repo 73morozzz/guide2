@@ -39,7 +39,7 @@ class Controller_Logintest extends Controller
 			//если пароли совпадают, то запускаем пользователю сессию! Можете его поздравить, он вошел!
 			$_SESSION['login']=$myrow['login']; 
 			$_SESSION['id']=$myrow['id'];//эти данные очень часто используются, вот их и будет "носить с собой" вошедший пользователь
-			$this->view->generate('text_view.php', 'template_view.php', $data="Вы успешно вошли на сайт! <a href='/index.php'>Главная страница</a>");
+			$this->view->generate('text_view.php', 'template_view.php', $data="Вы успешно вошли на сайт! <a href='/main'>Главная страница</a>");
 			}
 		 else {
 			//если пароли не сошлись

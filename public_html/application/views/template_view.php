@@ -2,6 +2,14 @@
 <html lang="ru">
 
 	<head>
+		<!-- Put this script tag to the <head> of your page -->
+		<script type="text/javascript" src="//vk.com/js/api/openapi.js?117"></script>
+
+		<script type="text/javascript">
+		VK.init({apiId: 5084356, onlyWidgets: true});
+		</script>
+	
+	
 	    <script type='text/javascript' src='js/scrollup.js'></script>
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -34,6 +42,37 @@
 
 	</head>
 	<body>
+	<div class="responsive-menu">
+			<a href="" class="responsive-menu-close"><i class="icon-close"></i></a>
+			<nav class="responsive-nav"></nav> <!-- end .responsive-nav -->
+		</div> <!-- end .responsive-menu -->
+		<header class="header">
+		
+			<div class="top">
+				<div class="container">
+					<div class="left">
+						<span></span>
+					</div> <!-- end .left -->
+					<div class="right">
+						
+					</div> <!-- end .right -->
+				</div> <!-- end .container -->
+			</div> <!-- end .top -->
+			<div class="navigation">
+				<div class="container clearfix">
+					<div class="logo"><a href="/main"><img src="images/logo-black.png" alt="Cuisine" class="img-responsive"></a></div> <!-- end .logo -->
+					<nav class="main-nav">
+						<ul class="list-unstyled">
+							<li><a href="/main">Главная</a></li>
+							<li><a href="/about">О нас</a></li>
+							<li><a href="/cities">Города</a></li>
+						</ul>
+					</nav> <!-- end .main-nav -->
+					<a href="" class="responsive-menu-open"><i class="fa fa-bars"></i></a>
+				</div> <!-- end .container -->
+			</div> <!-- end .navigation -->
+		</header> <!-- end .header -->
+		
     <?php include 'application/views/'.$content_view; ?>
 
 		<div class="section small text-center dark transparent parallax" style="background-image: url('images/background02.jpg');">
@@ -41,7 +80,7 @@
 				<div class="container">
 					<div class="call-to-action">
 						<h3>Готовы к путешествиям?</h3>
-						<a href="" class="button solid brown">Book a Table</a>
+						<a href="/cities" class="button solid brown">Да!</a>
 					</div> <!-- end .call-to-action -->
 				</div> <!-- end .container -->
 			</div> <!-- end .inner -->

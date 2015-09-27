@@ -133,7 +133,7 @@ $delfull    = $path_to_90_directory.$filename;
 		// Проверяем, есть ли ошибки
 		if ($result2=='TRUE')
 		{
-			$this->view->generate('text_view.php', 'template_view.php', $data="Вы успешно зарегистрированы! Теперь вы можете зайти на сайт. <a href='/'>Главная страница</a>");  
+			$this->view->generate('text_view.php', 'template_view.php', $data="Вы успешно зарегистрированы! Теперь вы можете зайти на сайт. <a href='/main'>Главная страница</a>");  
 		}
 		else {
 			$this->view->generate('text_view.php', 'template_view.php', $data="Ошибка! Вы не зарегистрированы.");  
